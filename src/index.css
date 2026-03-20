@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 6% 4%;
+    --foreground: 60 5% 90%;
+
+    --card: 240 5% 8%;
+    --card-foreground: 60 5% 90%;
+
+    --popover: 240 5% 8%;
+    --popover-foreground: 60 5% 90%;
+
+    --primary: 150 100% 50%;
+    --primary-foreground: 240 6% 4%;
+
+    --secondary: 240 5% 12%;
+    --secondary-foreground: 60 5% 90%;
+
+    --muted: 240 4% 14%;
+    --muted-foreground: 240 4% 48%;
+
+    --accent: 150 100% 50%;
+    --accent-foreground: 240 6% 4%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: 150 100% 50%;
+
+    --radius: 0rem;
+
+    --sidebar-background: 240 6% 4%;
+    --sidebar-foreground: 60 5% 90%;
+    --sidebar-primary: 150 100% 50%;
+    --sidebar-primary-foreground: 240 6% 4%;
+    --sidebar-accent: 240 5% 12%;
+    --sidebar-accent-foreground: 60 5% 90%;
+    --sidebar-border: 240 4% 16%;
+    --sidebar-ring: 150 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+
+  ::selection {
+    background: hsl(150 100% 50% / 0.2);
+    color: hsl(150 100% 50%);
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-emerald-300 to-cyan-400;
+  }
+
+  .glow-text {
+    text-shadow: 0 0 20px hsl(150 100% 50% / 0.4), 0 0 40px hsl(150 100% 50% / 0.15);
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(hsl(240 4% 16% / 0.5) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(240 4% 16% / 0.5) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .scanline {
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      hsl(150 100% 50% / 0.02) 2px,
+      hsl(150 100% 50% / 0.02) 4px
+    );
+  }
+
+  .border-glow {
+    box-shadow: 0 0 0 1px hsl(150 100% 50% / 0.15), inset 0 0 20px hsl(150 100% 50% / 0.03);
+  }
+}
