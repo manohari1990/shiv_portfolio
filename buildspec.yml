@@ -1,0 +1,25 @@
+version: "0.2"
+
+phases:
+  install:
+    runtime_version: 
+      nodejs: 20
+    commands:
+      - echo "installing dependencies..."
+      - rm -rf node_modules package-lock.json
+      - npm install
+
+  build: 
+    commands:
+      - echo "Building the app... `date`"
+      - npm run build
+  
+  post_build:
+    commands:
+      - echo "Invalidating CDN"
+      - aws cloudfront create-invalidation --distribution-id ERKVQ4I1F77GB --path "/*"
+
+artifacts:
+  base-directory: dist
+  files: 
+    - "**/*" 
