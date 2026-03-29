@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDownRight } from "lucide-react";
-import heroImage from "../assets/hero-creative.jpg";
+import heroImage from "../assets/hero-creative.jpeg";
 
 const HeroSection = () => {
   return (
@@ -20,12 +20,7 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             >
-              <div className="flex items-center gap-3 mb-8">
-                <div className="w-3 h-3 bg-primary" />
-                <span className="font-mono text-sm tracking-[0.3em] text-primary uppercase">
-                  Creative Director & Art Director
-                </span>
-              </div>
+              
 
               <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-display font-bold leading-[0.95] tracking-tight mb-8">
                 <span className="text-foreground">Crafting</span>

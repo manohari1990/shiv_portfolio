@@ -15,18 +15,6 @@ const skillCategories = [
     ],
   },
   {
-    title: "Branding & Strategy",
-    num: "02",
-    skills: [
-      "Brand Identity Design",
-      "Visual Strategy",
-      "Art Direction",
-      "Creative Concepting",
-      "Style Guide Development",
-      "Campaign Planning",
-    ],
-  },
-  {
     title: "Production & Media",
     num: "03",
     skills: [
@@ -45,7 +33,7 @@ const skillCategories = [
       "Social Media Creatives",
       "Digital Ad Design",
       "Email Marketing Design",
-      "UI/UX Fundamentals",
+      "UI Designing",
       "Presentation Design",
       "Motion Graphics",
     ],
@@ -72,7 +60,7 @@ const TechnicalSkillsSection = () => {
           {/* <span className="font-mono text-[10px] text-muted-foreground/30 hidden md:block">SECTION_04</span> */}
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-0 border border-border">
+        <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-0 border border-border">
           {skillCategories.map((cat, i) => (
             <motion.div
               key={cat.title}

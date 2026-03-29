@@ -53,9 +53,6 @@ const experiences = [
       "Layout & typography",
     ],
   },
-
-
-
   {
     role: "Senior Graphic Designer",
     company: "Two55am Studios Pvt Ltd, Gurgaon",

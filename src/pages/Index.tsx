@@ -23,9 +23,6 @@ const Index = () => {
           <p className="font-mono text-[10px] text-muted-foreground/40 tracking-wider uppercase">
             Copyright © 2026. All Rights Reserved.
           </p>
-          <p className="font-mono text-[10px] text-muted-foreground/40 tracking-wider uppercase">
-            Developed by Manohari Gara.
-          </p>
         </div>
       </footer>
     </div>
