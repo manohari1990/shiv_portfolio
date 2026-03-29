@@ -18,6 +18,6 @@ export const projects: ProjectsPayload[] = [
     image: healthcareImg,
     tags: ["Brand Identity", "Print", "Environmental"],
     num: "01",
-    link: "https://www.behance.net/shivbabu"
+    link: "https://drive.google.com/file/d/1tQRJqVv68aqHc4X2X-N5LTiniBTrgImY/view"
   }
 ];
