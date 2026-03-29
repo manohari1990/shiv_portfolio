@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { projects } from "../helpers/StaticContent";
 import type { ProjectsPayload } from "../helpers/StaticContent"
-import portfolio_video from "../assets/Portfolio.mp4"
 
 const handleClick = (project:ProjectsPayload) =>{
   if(!project.link || project.link.trim() == ''){
