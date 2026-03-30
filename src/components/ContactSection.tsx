@@ -31,7 +31,8 @@ const ContactSection = () => {
               <ArrowUpRight className="w-3 h-3" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/shiv-babu-254110138/"
+              target="_blank"
               className="flex items-center gap-2 px-8 py-4 border-t sm:border-t-0 sm:border-l border-border text-foreground font-medium text-xs tracking-wider uppercase hover:text-primary transition-colors"
             >
               <Linkedin className="w-4 h-4" />
