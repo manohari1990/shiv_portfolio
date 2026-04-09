@@ -47,7 +47,7 @@ const PortfolioSection = () => {
                 </video>
               </div>
               <div className={`p-8 md:p-12 flex flex-col justify-center ${i % 2 === 1 ? "md:order-1" : ""}`}>
-                <p className="text-muted-foreground font-body leading-relaxed text-[22px] mb-6">
+                <p className="text-muted-foreground font-body leading-relaxed text-lg mb-6">
                   {project.description}
                 </p>
               </div>
