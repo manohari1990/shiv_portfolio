@@ -17,7 +17,7 @@ phases:
   post_build:
     commands:
       - echo "Invalidating CDN"
-      - aws cloudfront create-invalidation --distribution-id E1VEU6VWOQK0ME --path "/*"
+      - aws cloudfront create-invalidation --distribution-id EUJAOZ9FR7Z9M --path "/*"
 
 artifacts:
   base-directory: dist
