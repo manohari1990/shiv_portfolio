@@ -42,7 +42,7 @@ const PortfolioSection = () => {
             >
               <div className={`overflow-hidden ${i % 2 === 1 ? "md:order-2" : ""}`}>
                 <video autoPlay muted loop preload="auto">
-                  <source src="https://shiv-portfolio-files.s3.us-east-1.amazonaws.com/assets/videos/Portfolio.mp4"  type="video/mp4" />
+                  <source src="/assets/Portfolio.mp4"  type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
